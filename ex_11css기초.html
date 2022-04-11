@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* css를 작성하는 공간*/
+        /*
+        전체선택자 = 모든 요소들에게 동일한 스타일을 적용
+        선택자키워드 = *
+        */
+        *{
+            color: aqua;
+        }
+
+        /*
+        타입선택자 = 태그명을 작성해서 스타일을 적용하는 선택자
+        선택자키워드 = 태그명
+        */
+        h1{
+            color: red;
+        }
+        /*
+        id선택자 = 태그에게 특정 이름을 부여해서 사용하는 선택자
+        선택자키워드 = #
+        중요한점 = 한페이지에 한번 존재(아이디가 중복이 되지 않음)
+        */
+        #a{
+            color: chartreuse;
+        }
+        /*
+        class선택자 = 태그에게 특정 이름을 부여해서 선택하는 선택자
+        선택자키워드 = .
+        중요한점 = 한페이지에 여러번 존재(중복이 가능)
+        */
+        .b{
+            color: bisque;
+        }
+        /*
+        선택자의 우선순위
+        *(전체) < 태그 < 클래스 < 아이디
+        관계
+        자식관계 > , 자손관계 " "
+        인접관계 +
+        */
+    </style>
+</head>
+<body>
+    <h1 id="a">종현</h1>
+    <h1 class="b">정민</h1>
+    <h1 class="b">민지</h1>
+    <h1>정형</h1>
+    <h1>승환</h1>
+
+    <p>
+        <span>스팬</span>
+    </p>
+
+</body>
+</html>
